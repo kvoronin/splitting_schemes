@@ -1,0 +1,13 @@
+src/data.h
+src/eigenvectors.h
+src/key_functions.h
+src/key_functions_03_06_2014.h
+src/solution.h
+src/solution_old.h
+compile.sh
+krnik_split2D_conv_interface.cpp
+krnik_split2D_conv_interface_09_07_2015.cpp
+krnik_split2D_conv_interface_10_07_2015.cpp
+krnik_split2D_conv_interface_13_08_2015working.cpp
+krnik_split2D_conv_interface_heavy_04_12_2014.cpp
+splitting_2D.cpp
