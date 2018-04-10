@@ -33,10 +33,14 @@
 #include<math.h>
 #include<malloc.h>
 #include<string.h>
+#include <iostream>
+
 #include"src/data.h"
 #include"src/solution.h"
 #include"src/key_functions.h"
 #include"src/eigenvectors.h"
+
+using namespace std;
 
 #ifdef SPECIAL_MODE
 	#ifndef DEBUGE
@@ -361,6 +365,11 @@ int main(int argc, char **argv)
 	strcat(filename,addname4);
 	strcat(filename,".txt");
 	f1 = fopen(filename,"w");
+
+    if (f1 == NULL)
+        std::cout << "A file with filename = " << filename << " could not be opened \n";
+
+    //return 0;
 
 	char filename_excel[100];
 	char addname1_excel[15];
@@ -2895,7 +2904,7 @@ void allocation()
 	}
 }
 
-void FilePrint2D(char *filename, double *Array, int dim1_array, int dim2_array)
+void FilePrint2D(const char *filename, double *Array, int dim1_array, int dim2_array)
 {
 	FILE *file = fopen(filename,"wt");
 	for (int j = 0;j < dim2_array; j++)
@@ -4509,7 +4518,7 @@ double norm_l2(double * massiv, int N, int M)
 }
 
 
-double scal_l2_bnd ( char * TorW, char * XorY, double * Vec1, double * Vec2, int Nx, int Ny, boundaryConditions xCondition, boundaryConditions yCondition  )
+double scal_l2_bnd ( const char * TorW, const char * XorY, double * Vec1, double * Vec2, int Nx, int Ny, boundaryConditions xCondition, boundaryConditions yCondition  )
 {
 	double res = 0.0;
 

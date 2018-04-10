@@ -1,4 +1,4 @@
-extern boundaryConditions;
+//extern boundaryConditions;
 
 
 int HeatFlux_Init(double * T_0, double * Wx_0, boundaryConditions xCondition, double * Wy_0, boundaryConditions yCondition, double * Wz_0, boundaryConditions zCondition, int numSolution, int Mx, int My, int Mz);

@@ -1,4 +1,4 @@
-double scal_l2_bnd ( char * TorW, char * XorY, double * Vec1, double * Vec2, int Nx, int Ny, boundaryConditions xCondition, boundaryConditions yCondition  );
+double scal_l2_bnd ( const char * TorW, const char * XorY, double * Vec1, double * Vec2, int Nx, int Ny, boundaryConditions xCondition, boundaryConditions yCondition  );
 
 // p^k_DD & p^k_NN
 int harmonics_W ( double * Harmon_W, int ind_W, int N, boundaryConditions Condition )
